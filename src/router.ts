@@ -6,7 +6,7 @@ import { handleInputErrors } from './middleware/validation';
 const router = Router();
 
 // Autenticacion y resgistro
-router.get('/auth/register', 
+router.post('/auth/register', 
     body('handle')
         .notEmpty()
         .withMessage('El handle no puede ir vacio.'),
