@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
+    "dev:api": "nodemon src/index.ts --api",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -16,6 +17,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.4",
     "slug": "^8.2.3"
   },
